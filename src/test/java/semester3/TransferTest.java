@@ -41,4 +41,13 @@ public class TransferTest {
       Transfer.transfer(src, dest);
       assertArrayEquals(src, dest);
    }
+   
+   @Test
+   public void testEmptyTransfer() throws Exception {
+      Integer[] src = new Integer[0];
+      Integer[] dest = new Integer[0];
+
+      Transfer.transfer(src, dest);
+      assertArrayEquals(src, dest);
+   }
 }
